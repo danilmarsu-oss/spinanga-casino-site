@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="nb-NO">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Logg inn på Spinanga Casino – Norges offisielle nettsted for Spinanga. Få tilgang til dine favorittspill, bonuser og eksklusive tilbud. Trygg og sikker innlogging for norske spillere.">
+  <title>Spinanga Casino Login – Offisiell Innlogging for Norske Spillere</title>
+  <link rel="canonical" href="/login/">
+  <link rel="icon" type="image/x-icon" href="../spinanga images/favicon (6).ico">
+  <style>
+    :root {
+      --header-footer: #004148;
+      --btn-header: #fece04;
+      --btn-cta: #fece04;
+      --main-bg: #001c2c;
+      --text: #f2f7fb;
+      --muted: #b8ccd9;
+      --card: #01344d;
+      --border: rgba(255, 255, 255, 0.14);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Avenir Next", "Trebuchet MS", "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at 15% 0%, rgba(3, 79, 102, 0.35), transparent 42%),
+        radial-gradient(circle at 85% 18%, rgba(254, 206, 4, 0.12), transparent 34%),
+        var(--main-bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1120px, 92vw);
+      margin-inline: auto;
+    }
+
+    .site-header {
+      background: var(--header-footer);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+    }
+
+    .header-inner {
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 10px 0;
+    }
+
+    .logo {
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 42px;
+      width: auto;
+    }
+
+    .main-nav ul {
+      list-style: none;
+      display: flex;
+      gap: 18px;
+      font-weight: 600;
+      color: #d7eaf3;
+    }
+
+    .main-nav a {
+      padding: 8px 10px;
+      border-radius: 999px;
+      transition: background-color 0.25s ease;
+    }
+
+    .main-nav a:hover,
+    .main-nav a:focus-visible {
+      background: rgba(255, 255, 255, 0.13);
+      outline: none;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn {
+      display: inline-block;
+      border: 0;
+      border-radius: 999px;
+      background: var(--btn-header);
+      color: #1c1c1c;
+      font-weight: 700;
+      padding: 10px 15px;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: transform 0.2s ease, filter 0.2s ease;
+      white-space: nowrap;
+      text-decoration: none;
+    }
+
+    .btn:hover,
+    .btn:focus-visible {
+      transform: translateY(-1px);
+      filter: brightness(1.05);
+      outline: none;
+    }
+
+    .content-section {
+      padding: 30px 0 18px;
+    }
+
+    .page-content {
+      background: rgba(0, 89, 111, 0.28);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 22px;
+    }
+
+    .page-content h1 {
+      font-size: clamp(1.9rem, 3.3vw, 2.8rem);
+      margin-bottom: 14px;
+      line-height: 1.25;
+    }
+
+    .page-content h2 {
+      font-size: clamp(1.4rem, 2.1vw, 1.95rem);
+      margin: 24px 0 10px;
+      line-height: 1.3;
+    }
+
+    .page-content h3 {
+      font-size: 1.15rem;
+      margin: 16px 0 10px;
+      line-height: 1.35;
+    }
+
+    .page-content p {
+      color: #e4eef5;
+      margin-bottom: 12px;
+    }
+
+    .page-content ul,
+    .page-content ol {
+      margin-left: 20px;
+      margin-bottom: 12px;
+    }
+
+    .page-content li {
+      margin-bottom: 6px;
+    }
+
+    .page-content table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0;
+      min-width: 540px;
+    }
+
+    .page-content .table-wrap {
+      overflow-x: auto;
+    }
+
+    .page-content th,
+    .page-content td {
+      border: 1px solid var(--border);
+      padding: 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .page-content th {
+      background: rgba(254, 206, 4, 0.18);
+    }
+
+    .form-card {
+      background: rgba(1, 61, 79, 0.62);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px;
+      margin-bottom: 20px;
+    }
+
+    .form-card h2 {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .field {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .field label {
+      font-weight: 700;
+      color: #d7e8f0;
+      font-size: 0.95rem;
+    }
+
+    .field input {
+      width: 100%;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.24);
+      background: #f8fbfd;
+      color: #13222b;
+      padding: 10px 12px;
+      font-size: 0.95rem;
+    }
+
+    .form-actions {
+      margin-top: 12px;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .form-submit {
+      border: 0;
+      border-radius: 999px;
+      background: var(--btn-cta);
+      color: #171717;
+      font-weight: 800;
+      padding: 10px 18px;
+      cursor: pointer;
+    }
+
+    .form-hint {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .page-updated {
+      text-align: center;
+      color: var(--muted);
+      padding: 14px 0 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      margin-top: 16px;
+    }
+
+    .site-footer {
+      background: var(--header-footer);
+      margin-top: 16px;
+      padding: 26px 0 16px;
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(120px, 1fr));
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    .trust-link {
+      background: #ffffff;
+      border-radius: 10px;
+      border: 1px solid #d4dde4;
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px;
+      transition: transform 0.2s ease;
+    }
+
+    .trust-link:hover,
+    .trust-link:focus-visible {
+      transform: translateY(-2px);
+      outline: none;
+    }
+
+    .trust-link img {
+      max-height: 42px;
+      object-fit: contain;
+      width: auto;
+    }
+
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 16px;
+      margin-bottom: 16px;
+      color: #d6e8ef;
+    }
+
+    .footer-links a:hover,
+    .footer-links a:focus-visible {
+      text-decoration: underline;
+      outline: none;
+    }
+
+
+    .social-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 16px;
+      color: #d6e8ef;
+    }
+
+    .social-links a {
+      border: 1px solid rgba(255, 255, 255, 0.26);
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-size: 0.92rem;
+      transition: background-color 0.2s ease;
+    }
+
+    .social-links a:hover,
+    .social-links a:focus-visible {
+      background: rgba(255, 255, 255, 0.14);
+      outline: none;
+    }
+
+    .providers-title {
+      margin: 4px 0 10px;
+      color: #d6e8ef;
+      font-size: 0.98rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+
+    .providers-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 12px;
+      align-items: center;
+    }
+
+    .provider-item {
+      background: #ffffff;
+      border-radius: 12px;
+      border: 1px solid #d6e1e8;
+      min-height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px;
+    }
+
+    .provider-item img {
+      max-height: 38px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    .footer-copy {
+      text-align: center;
+      margin-top: 14px;
+      color: #c5d9e1;
+      font-size: 0.93rem;
+    }
+
+    @media (max-width: 700px) {
+      .header-inner {
+        min-height: 56px;
+        padding: 6px 0;
+        gap: 8px;
+      }
+
+      .logo img {
+        height: 28px;
+      }
+
+      .main-nav {
+        display: none;
+      }
+
+      .header-actions {
+        gap: 6px;
+      }
+
+      .btn {
+        font-size: 0.82rem;
+        padding: 7px 11px;
+      }
+
+      .trust-grid,
+      .providers-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .page-content {
+        padding: 16px;
+      }
+
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="../" aria-label="Spinanga Casino hjem">
+        <img src="../spinanga images/spinanga logo.webp" alt="Spinanga Casino logo">
+      </a>
+
+      <nav class="main-nav" aria-label="Hovednavigasjon">
+        <ul>
+          <li><a href="../bonus/">Bonus</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn" href="../login/">Logg inn</a>
+        <a class="btn" href="/go/">Registrer deg</a>
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+    <section class="content-section">
+      <div class="container">
+        <article class="page-content">
+<div class="form-card">
+  <h2>Logg inn på kontoen din</h2>
+  <form action="#" method="post" autocomplete="on">
+    <div class="form-grid">
+      <div class="field">
+        <label for="login-email">E-post</label>
+        <input id="login-email" name="email" type="email" required placeholder="navn@epost.no">
+      </div>
+      <div class="field">
+        <label for="login-password">Passord</label>
+        <input id="login-password" name="password" type="password" required placeholder="Passord">
+      </div>
+    </div>
+    <div class="form-actions">
+      <button class="form-submit" type="submit">Logg inn</button>
+      <span class="form-hint">Har du ikke konto? <a href="/go/">Registrer deg</a>.</span>
+    </div>
+  </form>
+</div>
+
+<h1>Spinanga Casino Login – Logg Inn og Start Spillingen</h1>
+
+<p>Velkommen til den offisielle nettsiden for Spinanga Casino i Norge. Her finner du alt du trenger for å logge inn på kontoen din og komme i gang med en fantastisk spillopplevelse. Vi er stolte av å tilby norske spillere en trygg, sikker og underholdende plattform der moro og spenning aldri er langt unna. Enten du er en erfaren spiller eller helt ny hos oss, er innloggingsprosessen enkel og rask.</p>
+
+<h2>Slik Logger Du Inn på Spinanga Casino</h2>
+
+<p>Å logge inn på Spinanga Casino er enkelt og tar bare noen få sekunder. Vi har designet innloggingsprosessen slik at den er så smidig som mulig for alle våre norske brukere. Følg disse enkle trinnene for å få tilgang til kontoen din:</p>
+
+<ol>
+  <li>Besøk vår offisielle nettside for Spinanga Casino i Norge.</li>
+  <li>Klikk på «Logg inn»-knappen øverst til høyre på siden.</li>
+  <li>Skriv inn e-postadressen din som er registrert på kontoen.</li>
+  <li>Skriv inn passordet ditt i det angitte feltet.</li>
+  <li>Klikk på «Logg inn» for å få tilgang til kontoen din.</li>
+</ol>
+
+<p>Når du har logget inn, vil du umiddelbart ha tilgang til alle våre spill, kampanjer og personlige kontoinnstillinger. Vi sørger for at innloggingsprosessen alltid er rask og problemfri, slik at du kan bruke mer tid på det som virkelig teller – spillingen.</p>
+
+<h2>Glemt Passord? Vi Hjelper Deg</h2>
+
+<p>Det skjer oss alle – noen ganger glemmer man passordet sitt. Hos Spinanga Casino har vi gjort det enkelt å gjenopprette tilgangen til kontoen din. Klikk på «Glemt passord?»-lenken på innloggingssiden, og vi sender deg en e-post med instruksjoner for å tilbakestille passordet ditt. Prosessen er rask og sikker, og du vil være tilbake i spillet på kort tid. Vi anbefaler at du velger et sterkt og unikt passord for å beskytte kontoen din best mulig.</p>
+
+<h2>Opprett en Ny Konto hos Spinanga Casino</h2>
+
+<p>Er du ny hos oss? Vi ønsker deg hjertelig velkommen til Spinanga Casino – Norges offisielle destinasjon for nettspill. Å opprette en konto er gratis og tar bare noen minutter. Klikk på «Registrer deg»-knappen på vår hjemmeside og fyll ut det enkle registreringsskjemaet med dine personlige opplysninger. Etter at du har bekreftet e-postadressen din, er du klar til å logge inn og utforske alt vi har å tilby.</p>
+
+<p>Som ny spiller hos oss kan du se frem til en generøs velkomstbonus som gir deg en flott start på spilleventyrene dine. Vi verdsetter alle våre spillere og ønsker å gi deg den best mulige opplevelsen fra første stund.</p>
+
+<h2>Vårt Spillutvalg – Noe for Enhver Smak</h2>
+
+<p>Når du har logget inn på Spinanga Casino, åpner det seg en verden av underholdning. Vi tilbyr et enormt utvalg av spill fra verdens ledende spillutviklere. Enten du foretrekker klassiske spilleautomater, spennende bordspill som blackjack og rulett, eller det autentiske live casino-opplevelsen, har vi noe for deg.</p>
+
+<p>Våre spilleautomater inkluderer hundrevis av titler med ulike temaer, bonusfunksjoner og jackpotter. Fra enkle fruktkurvmaskiner til avanserte videoslots med filmkvalitet – vi har det hele. Vårt live casino gir deg muligheten til å spille mot ekte dealere i sanntid, noe som skaper en autentisk kasinoatmosfære rett fra komforten av ditt eget hjem.</p>
+
+<h2>Sikkerhet og Trygghet er Vår Prioritet</h2>
+
+<p>Hos Spinanga Casino tar vi sikkerheten til våre norske spillere på høyeste alvor. Vi bruker den nyeste SSL-krypteringsteknologien for å sikre at all kommunikasjon og alle transaksjoner på vår plattform er fullstendig beskyttet. Din personlige informasjon og dine finansielle data er alltid trygge hos oss.</p>
+
+<p>Vi er forpliktet til ansvarlig spilling og tilbyr en rekke verktøy som hjelper deg med å holde kontroll over spillingen din. Du kan sette innskuddsgrenser, tapegrenser og øktgrenser direkte fra kontoen din. Vi tilbyr også muligheten til å ta en pause fra spillingen eller selvekskludere deg dersom du føler behov for det. Vår kundeservice er alltid tilgjengelig for å hjelpe deg med eventuelle spørsmål om ansvarlig spilling.</p>
+
+<h2>Betalingsmetoder for Norske Spillere</h2>
+
+<p>Vi tilbyr et bredt utvalg av betalingsmetoder som er tilpasset norske spillere. Etter at du har logget inn, kan du enkelt gjøre innskudd og uttak ved hjelp av metoder som bankkort, e-lommebøker og andre populære betalingsløsninger. Alle transaksjoner behandles raskt og sikkert, og vi jobber kontinuerlig for å gjøre betalingsprosessen så enkel som mulig for deg.</p>
+
+<p>Våre uttak behandles effektivt, og vi streber alltid etter å sørge for at pengene dine er tilgjengelige for deg så raskt som mulig. Vi er transparente om våre vilkår og betingelser, slik at du alltid vet hva du kan forvente.</p>
+
+<h2>Kundeservice – Vi er Her for Deg</h2>
+
+<p>Hos Spinanga Casino er vi stolte av å tilby førsteklasses kundeservice til alle våre norske spillere. Vårt dedikerte supportteam er tilgjengelig for å hjelpe deg med alle spørsmål og problemer du måtte ha, inkludert hjelp med innlogging, kontoadministrasjon, betalinger og spillrelaterte spørsmål. Du kan nå oss via live chat, e-post eller telefon, og vi bestreber oss alltid på å gi deg raske og nyttige svar.</p>
+
+<h2>Logg Inn og Opplev Spinanga Casino i Dag</h2>
+
+<p>Vi inviterer deg til å logge inn på Spinanga Casino og oppleve alt vi har å tilby. Som Norges offisielle Spinanga Casino-nettsted er vi dedikert til å gi deg den beste mulige spillopplevelsen. Fra et fantastisk spillutvalg og lukrative bonuser til toppmoderne sikkerhet og utmerket kundeservice – vi har alt du trenger for en uforglemmelig spillopplevelse.</p>
+
+<p>Logg inn nå og bli en del av Spinanga Casino-familien. Vi ser frem til å ønske deg velkommen og gi deg en spillopplevelse utover det vanlige. Lykke til med spillingen!</p>
+        </article>
+      </div>
+    </section>
+
+    <div class="page-updated" id="page-updated">Siden oppdatert: </div>
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="trust-grid" aria-label="Tillitsorganisasjoner">
+        <a class="trust-link" href="https://www.gamstop.co.uk/" target="_blank" rel="noopener noreferrer">
+          <img src="../trust badges/gamstop.png" alt="Gamstop">
+        </a>
+        <a class="trust-link" href="https://www.gamcare.org.uk/" target="_blank" rel="noopener noreferrer">
+          <img src="../trust badges/GamCare.png" alt="GamCare">
+        </a>
+        <a class="trust-link" href="https://www.begambleaware.org/" target="_blank" rel="noopener noreferrer">
+          <img src="../trust badges/gambleaware.png" alt="BeGambleAware">
+        </a>
+      </div>
+
+      <ul class="footer-links" aria-label="Policy-lenker">
+        <li><a href="../about-us/">om oss</a></li>
+        <li><a href="../contact-us/">kontakt oss</a></li>
+        <li><a href="../bonus-policy/">bonuspolicy</a></li>
+        <li><a href="../privacy-policy/">personvernpolicy</a></li>
+        <li><a href="../responsible-gambling/">ansvarlig spilling</a></li>
+        <li><a href="../terms-and-conditions/">vilkår og betingelser</a></li>
+      </ul>
+
+
+      <div class="social-links" aria-label="Offisielle sosiale medier">
+        <a href="." target="_blank" rel="noopener noreferrer">.</a>
+      </div>
+
+      <p class="providers-title">Spilleleverandører</p>
+      <div class="providers-grid" aria-label="Spillleverandører">
+        <div class="provider-item"><img src="../providers/pragmatic-play-logo-png.png" alt="Pragmatic Play"></div>
+        <div class="provider-item"><img src="../providers/Games-Global.svg" alt="Games Global"></div>
+        <div class="provider-item"><img src="../providers/playngo.webp" alt="Play'n GO"></div>
+        <div class="provider-item"><img src="../providers/netentlogo.png" alt="NetEnt"></div>
+        <div class="provider-item"><img src="../providers/Yggdrasil Gaming_Logo_1.png" alt="Yggdrasil"></div>
+        <div class="provider-item"><img src="../providers/pragmatic-play.png" alt="Pragmatic Play ikon"></div>
+        <div class="provider-item"><img src="../providers/quickspin.png" alt="Quickspin"></div>
+        <div class="provider-item"><img src="../providers/playn-go-logo.png" alt="Play'n GO logo"></div>
+        <div class="provider-item"><img src="../providers/microgaming-logo.png" alt="Microgaming"></div>
+        <div class="provider-item"><img src="../providers/nolimit city.png" alt="Nolimit City"></div>
+        <div class="provider-item"><img src="../providers/evolution.png" alt="Evolution"></div>
+      </div>
+
+      <p class="footer-copy">Opphavsrett 2026 Spinanga Casino. Alle rettigheter forbeholdt.</p>
+    </div>
+  </footer>
+
+
+  <script>
+    const updateEl = document.getElementById('page-updated');
+    const today = new Date().toLocaleDateString('nb-NO', {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric'
+    });
+    updateEl.textContent = `Siden oppdatert: ${today}`;
+  </script>
+
+</body>
+</html>

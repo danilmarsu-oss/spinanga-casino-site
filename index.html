@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="nb-NO">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Oppdag spinanga casino med 5000 KR + 200 GS velkomstbonus. Vi tilbyr spill, bonuser, raske betalinger og en trygg casinoopplevelse hos oss.">
+  <title>Spinanga Casino – 5000 KR + 200 GS Velkomstbonus</title>
+  <link rel="icon" type="image/x-icon" href="spinanga images/favicon (6).ico">
+  <style>
+    :root {
+      --header-footer: #004148;
+      --btn-header: #fece04;
+      --btn-cta: #fece04;
+      --main-bg: #001c2c;
+      --text: #f2f7fb;
+      --muted: #b8ccd9;
+      --card: #01344d;
+      --border: rgba(255, 255, 255, 0.14);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Avenir Next", "Trebuchet MS", "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at 15% 0%, rgba(3, 79, 102, 0.35), transparent 42%),
+        radial-gradient(circle at 85% 18%, rgba(254, 206, 4, 0.12), transparent 34%),
+        var(--main-bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1120px, 92vw);
+      margin-inline: auto;
+    }
+
+    .site-header {
+      background: var(--header-footer);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+    }
+
+    .header-inner {
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 10px 0;
+    }
+
+    .logo {
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 42px;
+      width: auto;
+    }
+
+    .main-nav ul {
+      list-style: none;
+      display: flex;
+      gap: 18px;
+      font-weight: 600;
+      color: #d7eaf3;
+    }
+
+    .main-nav a {
+      padding: 8px 10px;
+      border-radius: 999px;
+      transition: background-color 0.25s ease;
+    }
+
+    .main-nav a:hover,
+    .main-nav a:focus-visible {
+      background: rgba(255, 255, 255, 0.13);
+      outline: none;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn {
+      display: inline-block;
+      border: 0;
+      border-radius: 999px;
+      background: var(--btn-header);
+      color: #1c1c1c;
+      font-weight: 700;
+      padding: 10px 15px;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: transform 0.2s ease, filter 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .btn:hover,
+    .btn:focus-visible {
+      transform: translateY(-1px);
+      filter: brightness(1.05);
+      outline: none;
+    }
+
+    .hero {
+      padding: 42px 0 24px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: clamp(1.9rem, 3.4vw, 3rem);
+      letter-spacing: 0.02em;
+      margin-bottom: 22px;
+    }
+
+    .hero-banner {
+      border-radius: 18px;
+      width: 100%;
+      max-height: 480px;
+      object-fit: cover;
+      border: 1px solid var(--border);
+      box-shadow: 0 20px 42px rgba(0, 0, 0, 0.33);
+    }
+
+    .cta-wrap {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .cta-btn {
+      background: var(--btn-cta);
+      color: #1a1a1a;
+      font-size: 1.1rem;
+      font-weight: 800;
+      border-radius: 999px;
+      padding: 14px 34px;
+      border: 0;
+      cursor: pointer;
+      animation: pulse 1.8s infinite ease-in-out;
+      box-shadow: 0 0 0 0 rgba(254, 206, 4, 0.65);
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(254, 206, 4, 0.7);
+      }
+      70% {
+        transform: scale(1.04);
+        box-shadow: 0 0 0 16px rgba(254, 206, 4, 0);
+      }
+      100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(254, 206, 4, 0);
+      }
+    }
+
+    section {
+      padding: 34px 0;
+    }
+
+    h2 {
+      font-size: clamp(1.45rem, 2.3vw, 2rem);
+      margin-bottom: 14px;
+    }
+
+    .section-intro {
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+
+    .games-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .game-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+      aspect-ratio: 1 / 1;
+      position: relative;
+    }
+
+    .game-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.35s ease;
+    }
+
+    .game-card:hover img {
+      transform: scale(1.06);
+    }
+
+    .seo-block {
+      background: rgba(0, 89, 111, 0.28);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 22px;
+    }
+
+    .seo-block h2:not(:first-child) {
+      margin-top: 26px;
+    }
+
+    .seo-block h3 {
+      font-size: 1.2rem;
+      margin: 18px 0 10px;
+    }
+
+    .seo-block p {
+      margin-bottom: 12px;
+      color: #e4eef5;
+    }
+
+    .seo-block ul,
+    .seo-block ol {
+      margin-left: 20px;
+      margin-bottom: 12px;
+    }
+
+    .seo-block li {
+      margin-bottom: 6px;
+    }
+
+    .seo-image {
+      width: 100%;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      margin: 10px 0 14px;
+      max-height: 420px;
+      object-fit: cover;
+    }
+
+    .seo-table-wrap {
+      overflow-x: auto;
+      margin-top: 10px;
+      margin-bottom: 14px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 540px;
+    }
+
+    th,
+    td {
+      border: 1px solid var(--border);
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background: rgba(254, 206, 4, 0.18);
+    }
+
+    .payment-grid,
+    .providers-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 12px;
+      align-items: center;
+    }
+
+    .payment-item,
+    .provider-item {
+      background: #ffffff;
+      border-radius: 12px;
+      border: 1px solid #d6e1e8;
+      min-height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px;
+    }
+
+    .payment-item img,
+    .provider-item img {
+      max-height: 38px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .review {
+      background: rgba(0, 76, 96, 0.28);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px;
+    }
+
+    .review h3 {
+      font-size: 1.05rem;
+      margin-bottom: 10px;
+      color: #ffe37c;
+    }
+
+    .review p {
+      color: #d7e8f0;
+    }
+
+    .review strong {
+      display: block;
+      margin-top: 12px;
+      color: #ffe37c;
+    }
+
+    .faq-item {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: rgba(0, 52, 71, 0.5);
+      margin-bottom: 10px;
+      overflow: hidden;
+    }
+
+    .faq-btn {
+      width: 100%;
+      text-align: left;
+      background: transparent;
+      color: var(--text);
+      border: 0;
+      padding: 14px 16px;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+    }
+
+    .faq-btn span:last-child {
+      font-weight: 900;
+    }
+
+    .faq-content {
+      display: none;
+      padding: 0 16px 14px;
+      color: var(--muted);
+    }
+
+    .faq-item.open .faq-content {
+      display: block;
+    }
+
+    .page-updated {
+      text-align: center;
+      color: var(--muted);
+      padding: 14px 0 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .site-footer {
+      background: var(--header-footer);
+      margin-top: 16px;
+      padding: 26px 0 16px;
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(120px, 1fr));
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    .trust-link {
+      background: #ffffff;
+      border-radius: 10px;
+      border: 1px solid #d4dde4;
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px;
+      transition: transform 0.2s ease;
+    }
+
+    .trust-link:hover,
+    .trust-link:focus-visible {
+      transform: translateY(-2px);
+      outline: none;
+    }
+
+    .trust-link img {
+      max-height: 42px;
+      object-fit: contain;
+      width: auto;
+    }
+
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 16px;
+      margin-bottom: 16px;
+      color: #d6e8ef;
+    }
+
+    .footer-links a:hover,
+    .footer-links a:focus-visible {
+      text-decoration: underline;
+      outline: none;
+    }
+
+
+    .social-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 16px;
+      color: #d6e8ef;
+    }
+
+    .social-links a {
+      border: 1px solid rgba(255, 255, 255, 0.26);
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-size: 0.92rem;
+      transition: background-color 0.2s ease;
+    }
+
+    .social-links a:hover,
+    .social-links a:focus-visible {
+      background: rgba(255, 255, 255, 0.14);
+      outline: none;
+    }
+
+    .providers-title {
+      margin: 4px 0 10px;
+      color: #d6e8ef;
+      font-size: 0.98rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+
+    .footer-copy {
+      text-align: center;
+      margin-top: 14px;
+      color: #c5d9e1;
+      font-size: 0.93rem;
+    }
+
+    @media (max-width: 980px) {
+      .games-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .reviews-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .header-inner {
+        min-height: 56px;
+        padding: 6px 0;
+        gap: 8px;
+      }
+
+      .logo img {
+        height: 28px;
+      }
+
+      .main-nav {
+        display: none;
+      }
+
+      .header-actions {
+        gap: 6px;
+      }
+
+      .btn {
+        font-size: 0.82rem;
+        padding: 7px 11px;
+      }
+
+      h1 {
+        margin-bottom: 14px;
+      }
+
+      .hero {
+        padding-top: 22px;
+      }
+
+      .games-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .payment-grid,
+      .providers-grid,
+      .trust-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="./" aria-label="Spinanga Casino hjem">
+        <img src="spinanga images/spinanga logo.webp" alt="Spinanga Casino logo">
+      </a>
+
+      <nav class="main-nav" aria-label="Hovednavigasjon">
+        <ul>
+          <li><a href="bonus/">Bonus</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn" href="login/">Logg inn</a>
+        <a class="btn" href="/go/">Registrer deg</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container">
+        <h1>Spinanga Casino</h1>
+        <img class="hero-banner" src="spinanga images/spinanga.webp" alt="Spinanga Casino hovedbanner">
+        <div class="cta-wrap">
+          <a class="cta-btn" href="/go/">Join now!</a>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="games-title">
+      <div class="container">
+        <h2 id="games-title">Populære kasinospill</h2>
+        <p class="section-intro">Utforsk våre mest populære spilleautomater med raske runder, bonusfunksjoner og høy underholdningsverdi.</p>
+        <div class="games-grid">
+          <article class="game-card"><img src="game images/super-sixers-mines.webp" alt="Super Sixers Mines"></article>
+          <article class="game-card"><img src="game images/temple-tumble.webp" alt="Temple Tumble"></article>
+          <article class="game-card"><img src="game images/turbo-diamonds-hold-and-win.webp" alt="Turbo Diamonds Hold and Win"></article>
+          <article class="game-card"><img src="game images/seven-seven-pots-and-pearls.webp" alt="Seven Seven Pots and Pearls"></article>
+          <article class="game-card"><img src="game images/the-shadow-order-pushgaming.webp" alt="The Shadow Order"></article>
+          <article class="game-card"><img src="game images/mad-hit-slippery-soap.webp" alt="Mad Hit Slippery Soap"></article>
+          <article class="game-card"><img src="game images/more-turkey.webp" alt="More Turkey"></article>
+          <article class="game-card"><img src="game images/money-train-3.webp" alt="Money Train 3"></article>
+          <article class="game-card"><img src="game images/razor-returns.webp" alt="Razor Returns"></article>
+          <article class="game-card"><img src="game images/razor-ways.webp" alt="Razor Ways"></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="bonus" aria-labelledby="seo-title">
+      <div class="container seo-block">
+        <p>Vi ønsker deg velkommen til spinanga casino – et sted hvor vi tilbyr en spennende og trygg spillopplevelse. Hos oss finner du et bredt utvalg av spill, moderne funksjoner og brukervennlig design. Vi jobber kontinuerlig for å gi deg underholdning av høy kvalitet, slik at du kan nyte hvert øyeblikk hos oss.</p>
+
+        <h2 id="seo-title">Om Spinanga Casino</h2>
+        <p>Spinanga casino er en moderne og dynamisk spillplattform hvor vi får tilgang til et stort utvalg av casinospill, live dealer-opplevelser og kryptobaserte løsninger. Plattformen er utviklet med fokus på brukervennlighet, raske transaksjoner og et bredt internasjonalt publikum. Vi kan enkelt navigere mellom spillkategorier, benytte oss av attraktive bonuser og spille både på desktop og mobil. spinanga tilbyr også sikre betalingsmetoder, inkludert kryptovaluta, som gir oss fleksibilitet og raske uttak. Med døgnåpen kundestøtte og jevnlige kampanjer sørger vi for en stabil og engasjerende spillopplevelse tilpasset både nye og erfarne spillere.</p>
+        <div class="seo-table-wrap">
+          <table>
+            <tbody>
+              <tr>
+                <th>Casino navn</th>
+                <td>Spinanga Casino</td>
+              </tr>
+              <tr>
+                <th>Etablert</th>
+                <td>2021</td>
+              </tr>
+              <tr>
+                <th>Lisens</th>
+                <td>Curacao (Rabidi N.V.)</td>
+              </tr>
+              <tr>
+                <th>Spillutvalg</th>
+                <td>Spilleautomater, live casino, bordspill</td>
+              </tr>
+              <tr>
+                <th>Programvare</th>
+                <td>Flere ledende spillutviklere</td>
+              </tr>
+              <tr>
+                <th>Betalingsmetoder</th>
+                <td>Kryptovaluta, kort, e-lommebøker</td>
+              </tr>
+              <tr>
+                <th>Mobilspill</th>
+                <td>Fullt optimalisert for mobil og nettbrett</td>
+              </tr>
+              <tr>
+                <th>Kundestøtte</th>
+                <td>24/7 live chat og e-post</td>
+              </tr>
+              <tr>
+                <th>Bonuser</th>
+                <td>Velkomstbonus, reload, gratisspinn</td>
+              </tr>
+              <tr>
+                <th>Språk</th>
+                <td>Flere språk tilgjengelig</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>Spinanga bonuser og kampanjer</h2>
+        <img class="seo-image" src="spinanga images/spinanga bonuses.webp" alt="Spinanga bonuser og kampanjer">
+        <p>Hos spinanga finner vi et bredt utvalg av bonuser og kampanjer som er designet for å gi oss mer verdi og lengre spilletid. Vi tilbyr både velkomstbonuser, reload-tilbud og eksklusive kampanjer for kryptospillere. Våre kampanjer oppdateres jevnlig slik at vi alltid har noe nytt og spennende tilgjengelig. Enten vi er nye spillere eller allerede aktive brukere, kan vi dra nytte av generøse gratisspinn, prosentbaserte innskuddsbonuser og unike ekstra belønninger. Vi fokuserer på fleksibilitet, raske aktiveringer og tydelige vilkår, slik at vi enkelt kan få mest mulig ut av hvert tilbud. Utforsk våre kampanjer og finn bonusen som passer best for oss.</p>
+        <div class="seo-table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Bonus</th>
+                <th>Detaljer</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Velkomstbonus</td>
+                <td>100% opptil 5 000 kr + 200 gratisspinn + bonus crab</td>
+              </tr>
+              <tr>
+                <td>Krypto velkomstbonus</td>
+                <td>200% opptil 3 000 USDT</td>
+              </tr>
+              <tr>
+                <td>Helge reload bonus</td>
+                <td>7 000 kr + 50 gratisspinn</td>
+              </tr>
+              <tr>
+                <td>Krypto reload helg</td>
+                <td>75% opptil 750 USDT + 100 gratisspinn</td>
+              </tr>
+              <tr>
+                <td>Ukentlig reload</td>
+                <td>50 gratisspinn</td>
+              </tr>
+              <tr>
+                <td>Krypto reload</td>
+                <td>60% opptil 1 000 USDT</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <h3>Velkomstbonus</h3>
+        <p>Vi får en sterk start med denne velkomstbonusen hos spinanga casino, som gir oss 100% opptil 5 000 kr sammen med 200 gratisspinn og en ekstra bonusfunksjon. Dette tilbudet lar oss utforske flere spill uten å bruke for mye av egne midler. Vi kan aktivere bonusen raskt etter registrering og begynne å spille med en gang.</p>
+        <ul>
+          <li>100% matchbonus</li>
+          <li>200 gratisspinn</li>
+          <li>Ekstra bonusfunksjon</li>
+        </ul>
+
+        <h3>Krypto velkomstbonus</h3>
+        <p>Denne bonusen er perfekt for oss som foretrekker kryptobetalinger. Vi får opptil 200% bonus opptil 3 000 USDT, noe som gir betydelig ekstra spillverdi. casino spinanga gir oss fleksibilitet til å bruke populære kryptovalutaer og nyte raske transaksjoner. Dette gjør spillopplevelsen både moderne og effektiv.</p>
+        <ul>
+          <li>200% bonus</li>
+          <li>Opptil 3 000 USDT</li>
+          <li>Støtte for krypto</li>
+        </ul>
+
+        <h3>Helge reload bonus</h3>
+        <p>I helgene kan vi dra nytte av ekstra påfyll med denne reload-bonusen. Vi får opptil 7 000 kr samt 50 gratisspinn, noe som gir oss mer spilletid og flere vinnersjanser. Dette tilbudet er ideelt for oss som ønsker å forsterke spillopplevelsen i helgene.</p>
+        <ul>
+          <li>Opptil 7 000 kr</li>
+          <li>50 gratisspinn</li>
+          <li>Tilgjengelig i helger</li>
+        </ul>
+
+        <h3>Krypto reload helg</h3>
+        <p>For kryptobrukere tilbyr vi en egen helgebonus med 75% opptil 750 USDT og 100 gratisspinn. Dette gir oss en balansert kombinasjon av bonusmidler og ekstra spinn. Vi kan enkelt aktivere tilbudet og nyte fordelene gjennom helgen.</p>
+        <ul>
+          <li>75% bonus</li>
+          <li>100 gratisspinn</li>
+          <li>Kryptobetaling</li>
+        </ul>
+
+        <h3>Ukentlig reload</h3>
+        <p>Hver uke kan vi motta 50 gratisspinn som en del av vårt lojalitetsprogram. Dette gir oss en jevn strøm av ekstra spillmuligheter uten krav om store innskudd. Det er en enkel måte å holde spillingen spennende på gjennom hele uken.</p>
+        <ul>
+          <li>50 gratisspinn ukentlig</li>
+          <li>Enkel aktivering</li>
+          <li>Ekstra spilltid</li>
+        </ul>
+
+        <h3>Krypto reload</h3>
+        <p>Denne bonusen gir oss 60% opptil 1 000 USDT når vi gjør nye innskudd med kryptovaluta. Det er et godt alternativ for oss som ønsker fleksibilitet og raske transaksjoner. Vi kan bruke bonusen på et bredt utvalg av spill og øke våre vinnersjanser.</p>
+        <ul>
+          <li>60% bonus</li>
+          <li>Opptil 1 000 USDT</li>
+          <li>Rask krypto</li>
+        </ul>
+
+        <h2>Hvordan få bonus hos Spinanga</h2>
+        <img class="seo-image" src="spinanga images/spinanga registration.webp" alt="Hvordan få bonus hos Spinanga">
+        <p>Hos spinanga gjør vi det enkelt for oss å aktivere bonuser og komme raskt i gang med spillingen. Prosessen er brukervennlig og tar bare noen få minutter fra registrering til vi kan begynne å bruke bonusen. Vi sørger for at alle kampanjer er tydelig presentert, slik at vi vet hva vi får og hvordan vi aktiverer tilbudet. Enten vi velger en velkomstbonus eller en reload-kampanje, følger vi de samme enkle stegene. Det er viktig at vi oppfyller eventuelle krav, som minimumsinnskudd eller bruk av bonuskode dersom det kreves. Når alt er på plass, kan vi nyte ekstra spillemidler og gratisspinn uten komplikasjoner.</p>
+        <ul>
+          <li>Opprett en konto hos oss</li>
+          <li>Logg inn på spillkontoen vår</li>
+          <li>Gå til kampanjesiden</li>
+          <li>Velg ønsket bonus</li>
+          <li>Gjør et kvalifiserende innskudd</li>
+          <li>Aktiver bonusen (med kode hvis nødvendig)</li>
+          <li>Start å spille med bonusmidler</li>
+        </ul>
+
+        <h2>Spillutvalg hos Spinanga</h2>
+        <img class="seo-image" src="spinanga images/spinanga games.webp" alt="Spillutvalg hos Spinanga">
+        <p>Hos spinanga finner vi et imponerende spillutvalg med tusenvis av titler fra ledende utviklere. Plattformen tilbyr alt fra klassiske casinospill til moderne videoautomater og live dealer-opplevelser. Vi kan velge mellom ulike spilltyper basert på våre preferanser, enten vi liker raske spinn eller strategiske bordspill. spinanga casino sørger for jevnlige oppdateringer og nye lanseringer, slik at vi alltid har tilgang til ferskt innhold. Med et bredt spekter av temaer, funksjoner og innsatsnivåer kan vi enkelt finne spill som passer vår stil og vårt budsjett.</p>
+        <ul>
+          <li>Spilleautomater (slots)</li>
+          <li>Live casino</li>
+          <li>Bordspill</li>
+          <li>Jackpotspill</li>
+          <li>Arkadespill og spesialspill</li>
+        </ul>
+        <h3>Spilleautomater</h3>
+        <p>Spilleautomater er den mest populære kategorien hos oss, med tusenvis av titler tilgjengelig. Vi kan velge mellom klassiske slots, moderne videoautomater og avanserte Megaways-spill. Mange spill inkluderer bonusrunder, multiplikatorer og gratisspinn som gir ekstra spenning. Temaene varierer fra eventyr og mytologi til fruktmaskiner og moderne grafikk. Vi finner også progressive jackpotautomater med mulighet for store gevinster, noe som gjør denne kategorien ideell for både nye og erfarne spillere.</p>
+        <h3>Live casino</h3>
+        <img class="seo-image" src="spinanga images/spinanga live casino.webp" alt="Live casino hos Spinanga">
+        <p>Live casino gir oss en realistisk spillopplevelse med ekte dealere som strømmer i sanntid. Vi kan spille populære spill som blackjack, roulette og baccarat direkte fra studioer med profesjonelle verter. Denne kategorien kombinerer bekvemmeligheten av online spill med følelsen av et fysisk casino. Interaktive funksjoner og chat gjør opplevelsen mer sosial, og vi kan enkelt velge bord basert på innsatsnivå og spilltype.</p>
+        <h3>Bordspill</h3>
+        <p>Bordspill er perfekte for oss som foretrekker strategi og klassisk casinospill. Vi finner flere varianter av blackjack, roulette og poker, hver med ulike regler og spillopplevelser. Disse spillene gir oss muligheten til å påvirke utfallet gjennom valg og taktikk. Med både enkle og avanserte versjoner tilgjengelig, passer bordspill for spillere på alle nivåer.</p>
+        <h3>Jackpotspill</h3>
+        <p>Jackpotspill gir oss sjansen til å vinne store premier gjennom progressive eller faste jackpotter. Disse spillene øker i verdi over tid og kan gi betydelige utbetalinger. Vi kan velge mellom ulike jackpottyper, inkludert daglige og nettverksbaserte premier. Spenningen ved å jakte på en stor gevinst gjør denne kategorien svært populær blant spillere.</p>
+        <h3>Arkadespill og spesialspill</h3>
+        <p>Arkade- og spesialspill gir oss en annerledes og mer avslappet spillopplevelse. Her finner vi spill som krasjspill, skrapelodd og andre raske spill med enkle regler. Disse spillene er ideelle for korte økter og gir rask underholdning uten kompliserte strategier. Variasjonen gjør at vi alltid kan prøve noe nytt og spennende.</p>
+
+        <h2>Spinanga spillutviklere</h2>
+        <p>Hos spinanga samarbeider vi med et stort antall anerkjente spillutviklere som leverer høy kvalitet, innovasjon og pålitelig ytelse. Plattformen samler spill fra mer enn 80–100 leverandører, noe som gir oss et enormt utvalg av titler med forskjellig stil og funksjonalitet. Vi får tilgang til alt fra klassiske slots til avanserte live casino-spill med ekte dealere. spinanga casino sørger for at alle spill leveres med moderne grafikk, rettferdige resultater og stabile løsninger. Samarbeidet med ledende utviklere betyr også at vi jevnlig får nye spill og oppdateringer, slik at spillopplevelsen alltid føles frisk og variert.</p>
+        <ul>
+          <li>Pragmatic Play</li>
+          <li>NetEnt</li>
+          <li>Microgaming</li>
+          <li>Playtech</li>
+          <li>Evolution Gaming</li>
+          <li>Play’n GO</li>
+          <li>Red Tiger Gaming</li>
+          <li>Yggdrasil</li>
+          <li>ELK Studios</li>
+          <li>Nolimit City</li>
+          <li>BGaming</li>
+          <li>Playson</li>
+          <li>Hacksaw Gaming</li>
+        </ul>
+
+        <h2>Sikkerhet hos Spinanga</h2>
+        <p>Hos spinanga setter vi sikkerhet og personvern i høysetet for å gi oss en trygg spillopplevelse. Plattformen benytter avansert krypteringsteknologi for å beskytte våre personlige opplysninger og økonomiske transaksjoner. Vi spiller i et sikkert miljø hvor alle data håndteres konfidensielt og i samsvar med gjeldende standarder. spinanga casino opererer også med lisensiert drift, noe som sikrer rettferdig spill og pålitelig behandling av brukere. I tillegg overvåker vi kontinuerlig systemene våre for å forhindre svindel og uautorisert tilgang. Dette gir oss trygghet til å fokusere på underholdning uten bekymringer.</p>
+        <ul>
+          <li>SSL-kryptering for datasikkerhet</li>
+          <li>Lisensiert og regulert drift</li>
+          <li>Beskyttelse av personopplysninger</li>
+          <li>Sikre betalingsløsninger</li>
+          <li>Kontinuerlig overvåking mot svindel</li>
+          <li>Rettferdige spill med RNG-teknologi</li>
+        </ul>
+
+        <h2>Innskuddsmetoder hos Spinanga</h2>
+        <p>Hos spinanga tilbyr vi et bredt utvalg av innskuddsmetoder som gir oss fleksibilitet og raske transaksjoner. Vi kan velge mellom tradisjonelle betalingsløsninger som Visa og Mastercard, moderne e-lommebøker som Skrill og Neteller, samt flere kryptovalutaer som Bitcoin og Ethereum. De fleste innskudd behandles umiddelbart, slik at vi kan begynne å spille uten forsinkelser. Minimumsinnskuddet er vanligvis lavt, noe som gjør det tilgjengelig for alle typer spillere. spinanga casino fokuserer på sikre og gebyrfrie betalinger, slik at vi får en enkel og trygg opplevelse når vi fyller på saldoen vår. Enten vi foretrekker fiat eller krypto, finner vi alltid en løsning som passer oss.</p>
+        <div class="seo-table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Metode</th>
+                <th>Type</th>
+                <th>Behandlingstid</th>
+                <th>Minimum</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Visa / Mastercard</td>
+                <td>Kortbetaling</td>
+                <td>Umiddelbar</td>
+                <td>ca. €10</td>
+              </tr>
+              <tr>
+                <td>Skrill / Neteller</td>
+                <td>E-lommebok</td>
+                <td>Umiddelbar</td>
+                <td>ca. €10</td>
+              </tr>
+              <tr>
+                <td>PaySafeCard / Neosurf</td>
+                <td>Forhåndsbetalt</td>
+                <td>Umiddelbar</td>
+                <td>ca. €10</td>
+              </tr>
+              <tr>
+                <td>Bankoverføring</td>
+                <td>Bank</td>
+                <td>2–5 dager</td>
+                <td>Varierer</td>
+              </tr>
+              <tr>
+                <td>Bitcoin / Ethereum / USDT</td>
+                <td>Kryptovaluta</td>
+                <td>10–60 minutter</td>
+                <td>ca. €20</td>
+              </tr>
+              <tr>
+                <td>Zimpler / lokale løsninger</td>
+                <td>Mobil / lokal</td>
+                <td>Umiddelbar</td>
+                <td>ca. €10</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="payments-title">
+      <div class="container">
+        <h2 id="payments-title">Betalingsmetoder</h2>
+        <p class="section-intro">Velg mellom trygge og raske betalingsløsninger.</p>
+        <div class="payment-grid">
+          <div class="payment-item"><img src="payment methods/bitcoin-method.png" alt="Bitcoin"></div>
+          <div class="payment-item"><img src="payment methods/neteller-method.png" alt="Neteller"></div>
+          <div class="payment-item"><img src="payment methods/trustly-method.webp" alt="Trustly"></div>
+          <div class="payment-item"><img src="payment methods/mastercard-method.svg" alt="Mastercard"></div>
+          <div class="payment-item"><img src="payment methods/payoneer-method.png" alt="Payoneer"></div>
+          <div class="payment-item"><img src="payment methods/skrill-method.png" alt="Skrill"></div>
+          <div class="payment-item"><img src="payment methods/visa-method.png" alt="Visa"></div>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="reviews-title">
+      <div class="container">
+        <h2 id="reviews-title">Brukeranmeldelser</h2>
+        <div class="reviews-grid">
+          <article class="review">
+            <h3>★★★★☆ – Lars, Oslo</h3>
+            <p>Vi har hatt en veldig god opplevelse så langt. Plattformen er enkel å bruke, og vi liker spesielt godt utvalget av spilleautomater. Innskudd går raskt, og vi fikk bonusen uten problemer. Kundestøtten svarte også ganske fort når vi hadde et spørsmål. Litt forbedring på uttakstid hadde gjort det perfekt.</p>
+          </article>
+          <article class="review">
+            <h3>★★★★★ – Ingrid, Bergen</h3>
+            <p>Dette er et av de beste casinoene vi har prøvd. Vi liker spesielt live casino-delen, som føles veldig realistisk. Alt fungerer smidig både på mobil og PC, og vi opplevde ingen tekniske problemer. Bonusene er også gode og enkle å forstå. Vi kommer definitivt til å fortsette å spille her.</p>
+          </article>
+          <article class="review">
+            <h3>★★★★☆ – Thomas, Trondheim</h3>
+            <p>Generelt er vi veldig fornøyde med opplevelsen. Det er mange spill å velge mellom, og siden laster raskt. Vi setter også pris på at det finnes kryptobetalinger. Det eneste vi savner er flere kampanjer i løpet av uken, men ellers fungerer alt som forventet.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="faq-title">
+      <div class="container">
+        <h2 id="faq-title">Ofte stilte spørsmål om Spinanga</h2>
+        <div class="faq-item">
+          <button class="faq-btn" type="button" aria-expanded="false">
+            <span>Hva er Spinanga?</span>
+            <span>+</span>
+          </button>
+          <div class="faq-content">
+            Spinanga er en online casino plattform hvor vi får tilgang til et bredt utvalg av spill, inkludert spilleautomater, live casino og bordspill. Plattformen er designet for å gi oss en moderne og brukervennlig spillopplevelse.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-btn" type="button" aria-expanded="false">
+            <span>Hvordan registrerer vi oss hos spinanga casino?</span>
+            <span>+</span>
+          </button>
+          <div class="faq-content">
+            Vi registrerer oss ved å opprette en konto med e-post og passord. Prosessen tar bare noen få minutter, og vi kan begynne å spille umiddelbart etter første innskudd.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-btn" type="button" aria-expanded="false">
+            <span>Hvilke betalingsmetoder støttes?</span>
+            <span>+</span>
+          </button>
+          <div class="faq-content">
+            Vi kan bruke flere betalingsmetoder, inkludert bankkort, e-lommebøker og kryptovaluta. Dette gir oss fleksibilitet og raske transaksjoner.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-btn" type="button" aria-expanded="false">
+            <span>Er casino spinanga trygt å bruke?</span>
+            <span>+</span>
+          </button>
+          <div class="faq-content">
+            Ja, vi spiller i et sikkert miljø med kryptering og lisensiert drift. Våre data og betalinger er beskyttet gjennom moderne sikkerhetssystemer.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-btn" type="button" aria-expanded="false">
+            <span>Tilbys det bonuser?</span>
+            <span>+</span>
+          </button>
+          <div class="faq-content">
+            Ja, vi får tilgang til flere bonuser, inkludert velkomstbonus, reload-tilbud og gratisspinn. Kampanjene oppdateres jevnlig.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-btn" type="button" aria-expanded="false">
+            <span>Kan vi spille på mobil?</span>
+            <span>+</span>
+          </button>
+          <div class="faq-content">
+            Ja, plattformen er fullt optimalisert for mobil og nettbrett, slik at vi kan spille hvor som helst uten å laste ned en app.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="page-updated" id="page-updated">Siden oppdatert: </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="trust-grid" aria-label="Tillitsorganisasjoner">
+        <a class="trust-link" href="https://www.gamstop.co.uk/" target="_blank" rel="noopener noreferrer">
+          <img src="trust badges/gamstop.png" alt="Gamstop">
+        </a>
+        <a class="trust-link" href="https://www.gamcare.org.uk/" target="_blank" rel="noopener noreferrer">
+          <img src="trust badges/GamCare.png" alt="GamCare">
+        </a>
+        <a class="trust-link" href="https://www.begambleaware.org/" target="_blank" rel="noopener noreferrer">
+          <img src="trust badges/gambleaware.png" alt="BeGambleAware">
+        </a>
+      </div>
+
+      <ul class="footer-links" aria-label="Policy-lenker">
+        <li><a href="about-us/">om oss</a></li>
+        <li><a href="contact-us/">kontakt oss</a></li>
+        <li><a href="bonus-policy/">bonuspolicy</a></li>
+        <li><a href="privacy-policy/">personvernpolicy</a></li>
+        <li><a href="responsible-gambling/">ansvarlig spilling</a></li>
+        <li><a href="terms-and-conditions/">vilkår og betingelser</a></li>
+      </ul>
+
+
+      <div class="social-links" aria-label="Offisielle sosiale medier">
+        <a href="." target="_blank" rel="noopener noreferrer">.</a>
+      </div>
+
+      <p class="providers-title">Spilleleverandører</p>
+      <div class="providers-grid" aria-label="Spillleverandører">
+        <div class="provider-item"><img src="providers/pragmatic-play-logo-png.png" alt="Pragmatic Play"></div>
+        <div class="provider-item"><img src="providers/Games-Global.svg" alt="Games Global"></div>
+        <div class="provider-item"><img src="providers/playngo.webp" alt="Play'n GO"></div>
+        <div class="provider-item"><img src="providers/netentlogo.png" alt="NetEnt"></div>
+        <div class="provider-item"><img src="providers/Yggdrasil Gaming_Logo_1.png" alt="Yggdrasil"></div>
+        <div class="provider-item"><img src="providers/pragmatic-play.png" alt="Pragmatic Play ikon"></div>
+        <div class="provider-item"><img src="providers/quickspin.png" alt="Quickspin"></div>
+        <div class="provider-item"><img src="providers/playn-go-logo.png" alt="Play'n GO logo"></div>
+        <div class="provider-item"><img src="providers/microgaming-logo.png" alt="Microgaming"></div>
+        <div class="provider-item"><img src="providers/nolimit city.png" alt="Nolimit City"></div>
+        <div class="provider-item"><img src="providers/evolution.png" alt="Evolution"></div>
+      </div>
+
+      <p class="footer-copy">Opphavsrett 2026 Spinanga Casino. Alle rettigheter forbeholdt.</p>
+    </div>
+  </footer>
+
+  <script>
+    const updateEl = document.getElementById('page-updated');
+    const today = new Date().toLocaleDateString('nb-NO', {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric'
+    });
+    updateEl.textContent = `Siden oppdatert: ${today}`;
+
+    const faqButtons = document.querySelectorAll('.faq-btn');
+    faqButtons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+
+        item.classList.toggle('open', !isOpen);
+        btn.setAttribute('aria-expanded', String(!isOpen));
+        btn.lastElementChild.textContent = isOpen ? '+' : '-';
+      });
+    });
+  </script>
+</body>
+</html>

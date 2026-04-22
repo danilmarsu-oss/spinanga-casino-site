@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="nb-NO">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Les vår offisielle personvernpolicy for Spinanga Casino i Norge. Vi forklarer hvordan vi samler inn, bruker og beskytter dine personopplysninger på vår offisielle norske nettside.">
+  <title>Personvernpolicy – Spinanga Casino Norge | Offisiell Nettside</title>
+  <link rel="canonical" href="/privacy-policy/">
+  <link rel="icon" type="image/x-icon" href="../spinanga images/favicon (6).ico">
+  <style>
+    :root {
+      --header-footer: #004148;
+      --btn-header: #fece04;
+      --btn-cta: #fece04;
+      --main-bg: #001c2c;
+      --text: #f2f7fb;
+      --muted: #b8ccd9;
+      --card: #01344d;
+      --border: rgba(255, 255, 255, 0.14);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Avenir Next", "Trebuchet MS", "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at 15% 0%, rgba(3, 79, 102, 0.35), transparent 42%),
+        radial-gradient(circle at 85% 18%, rgba(254, 206, 4, 0.12), transparent 34%),
+        var(--main-bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1120px, 92vw);
+      margin-inline: auto;
+    }
+
+    .site-header {
+      background: var(--header-footer);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+    }
+
+    .header-inner {
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 10px 0;
+    }
+
+    .logo {
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 42px;
+      width: auto;
+    }
+
+    .main-nav ul {
+      list-style: none;
+      display: flex;
+      gap: 18px;
+      font-weight: 600;
+      color: #d7eaf3;
+    }
+
+    .main-nav a {
+      padding: 8px 10px;
+      border-radius: 999px;
+      transition: background-color 0.25s ease;
+    }
+
+    .main-nav a:hover,
+    .main-nav a:focus-visible {
+      background: rgba(255, 255, 255, 0.13);
+      outline: none;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn {
+      display: inline-block;
+      border: 0;
+      border-radius: 999px;
+      background: var(--btn-header);
+      color: #1c1c1c;
+      font-weight: 700;
+      padding: 10px 15px;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: transform 0.2s ease, filter 0.2s ease;
+      white-space: nowrap;
+      text-decoration: none;
+    }
+
+    .btn:hover,
+    .btn:focus-visible {
+      transform: translateY(-1px);
+      filter: brightness(1.05);
+      outline: none;
+    }
+
+    .content-section {
+      padding: 30px 0 18px;
+    }
+
+    .page-content {
+      background: rgba(0, 89, 111, 0.28);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 22px;
+    }
+
+    .page-content h1 {
+      font-size: clamp(1.9rem, 3.3vw, 2.8rem);
+      margin-bottom: 14px;
+      line-height: 1.25;
+    }
+
+    .page-content h2 {
+      font-size: clamp(1.4rem, 2.1vw, 1.95rem);
+      margin: 24px 0 10px;
+      line-height: 1.3;
+    }
+
+    .page-content h3 {
+      font-size: 1.15rem;
+      margin: 16px 0 10px;
+      line-height: 1.35;
+    }
+
+    .page-content p {
+      color: #e4eef5;
+      margin-bottom: 12px;
+    }
+
+    .page-content ul,
+    .page-content ol {
+      margin-left: 20px;
+      margin-bottom: 12px;
+    }
+
+    .page-content li {
+      margin-bottom: 6px;
+    }
+
+    .page-content table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0;
+      min-width: 540px;
+    }
+
+    .page-content .table-wrap {
+      overflow-x: auto;
+    }
+
+    .page-content th,
+    .page-content td {
+      border: 1px solid var(--border);
+      padding: 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .page-content th {
+      background: rgba(254, 206, 4, 0.18);
+    }
+
+    .page-updated {
+      text-align: center;
+      color: var(--muted);
+      padding: 14px 0 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      margin-top: 16px;
+    }
+
+    .site-footer {
+      background: var(--header-footer);
+      margin-top: 16px;
+      padding: 26px 0 16px;
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(120px, 1fr));
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    .trust-link {
+      background: #ffffff;
+      border-radius: 10px;
+      border: 1px solid #d4dde4;
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px;
+      transition: transform 0.2s ease;
+    }
+
+    .trust-link:hover,
+    .trust-link:focus-visible {
+      transform: translateY(-2px);
+      outline: none;
+    }
+
+    .trust-link img {
+      max-height: 42px;
+      object-fit: contain;
+      width: auto;
+    }
+
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 16px;
+      margin-bottom: 16px;
+      color: #d6e8ef;
+    }
+
+    .footer-links a:hover,
+    .footer-links a:focus-visible {
+      text-decoration: underline;
+      outline: none;
+    }
+
+
+    .social-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 16px;
+      color: #d6e8ef;
+    }
+
+    .social-links a {
+      border: 1px solid rgba(255, 255, 255, 0.26);
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-size: 0.92rem;
+      transition: background-color 0.2s ease;
+    }
+
+    .social-links a:hover,
+    .social-links a:focus-visible {
+      background: rgba(255, 255, 255, 0.14);
+      outline: none;
+    }
+
+    .providers-title {
+      margin: 4px 0 10px;
+      color: #d6e8ef;
+      font-size: 0.98rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+
+    .providers-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 12px;
+      align-items: center;
+    }
+
+    .provider-item {
+      background: #ffffff;
+      border-radius: 12px;
+      border: 1px solid #d6e1e8;
+      min-height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px;
+    }
+
+    .provider-item img {
+      max-height: 38px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    .footer-copy {
+      text-align: center;
+      margin-top: 14px;
+      color: #c5d9e1;
+      font-size: 0.93rem;
+    }
+
+    @media (max-width: 700px) {
+      .header-inner {
+        min-height: 56px;
+        padding: 6px 0;
+        gap: 8px;
+      }
+
+      .logo img {
+        height: 28px;
+      }
+
+      .main-nav {
+        display: none;
+      }
+
+      .header-actions {
+        gap: 6px;
+      }
+
+      .btn {
+        font-size: 0.82rem;
+        padding: 7px 11px;
+      }
+
+      .trust-grid,
+      .providers-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .page-content {
+        padding: 16px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="../" aria-label="Spinanga Casino hjem">
+        <img src="../spinanga images/spinanga logo.webp" alt="Spinanga Casino logo">
+      </a>
+
+      <nav class="main-nav" aria-label="Hovednavigasjon">
+        <ul>
+          <li><a href="../bonus/">Bonus</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn" href="../login/">Logg inn</a>
+        <a class="btn" href="/go/">Registrer deg</a>
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+    <section class="content-section">
+      <div class="container">
+        <article class="page-content">
+<h1>Personvernpolicy – Spinanga Casino</h1>
+
+<p>Velkommen til den offisielle nettsiden til Spinanga Casino i Norge. Vi tar personvernet ditt på alvor og er forpliktet til å beskytte dine personopplysninger i samsvar med gjeldende personvernlovgivning, inkludert EUs personvernforordning (GDPR) og norsk personopplysningslov. Denne personvernpolicyen forklarer hvordan vi samler inn, bruker, lagrer og beskytter informasjonen du gir oss når du bruker vår nettside og våre tjenester.</p>
+
+<h2>1. Hvem vi er</h2>
+
+<p>Spinanga Casino er et online kasino som tilbyr spilltjenester til norske spillere via vår offisielle nettside. Vi er behandlingsansvarlig for dine personopplysninger og er ansvarlig for at opplysningene behandles i samsvar med gjeldende lovgivning. Dersom du har spørsmål om denne policyen eller behandlingen av dine personopplysninger, er du velkommen til å kontakte oss via våre offisielle kontaktkanaler som er tilgjengelige på nettsiden.</p>
+
+<h2>2. Hvilke opplysninger vi samler inn</h2>
+
+<p>Når du registrerer deg og bruker Spinanga Casino, samler vi inn ulike typer personopplysninger. Dette inkluderer, men er ikke begrenset til:</p>
+
+<ul>
+  <li><strong>Identifikasjonsopplysninger:</strong> Fullt navn, fødselsdato, nasjonalitet og kjønn.</li>
+  <li><strong>Kontaktopplysninger:</strong> E-postadresse, telefonnummer og postadresse.</li>
+  <li><strong>Finansielle opplysninger:</strong> Betalingsinformasjon, transaksjonshistorikk og bankopplysninger som er nødvendige for innskudd og uttak.</li>
+  <li><strong>Identifikasjonsdokumenter:</strong> Kopi av pass, førerkort eller annet gyldig ID-dokument for å bekrefte din identitet i henhold til krav om kjenn-din-kunde (KYC).</li>
+  <li><strong>Tekniske opplysninger:</strong> IP-adresse, nettlesertype, enhetsinformasjon, informasjonskapsler og bruksdata fra nettsiden.</li>
+  <li><strong>Spillopplysninger:</strong> Spillhistorikk, innsatser, gevinster og annen aktivitet knyttet til ditt spillerkonto.</li>
+</ul>
+
+<h2>3. Hvordan vi bruker dine opplysninger</h2>
+
+<p>Vi bruker de innsamlede opplysningene til følgende formål:</p>
+
+<ul>
+  <li>For å opprette og administrere din spillerkonto hos Spinanga Casino.</li>
+  <li>For å behandle innskudd, uttak og andre finansielle transaksjoner på en sikker måte.</li>
+  <li>For å verifisere din identitet og alder i samsvar med gjeldende lovgivning og lisenskrav.</li>
+  <li>For å overholde våre forpliktelser knyttet til ansvarlig spill og forebygging av spilleavhengighet.</li>
+  <li>For å oppfylle krav til anti-hvitvasking (AML) og bekjempelse av finansiering av terrorisme (CFT).</li>
+  <li>For å tilby deg kundestøtte og svare på dine henvendelser.</li>
+  <li>For å sende deg kampanjetilbud, bonuser og annen markedsføring, forutsatt at du har samtykket til dette.</li>
+  <li>For å forbedre våre tjenester, nettside og brukeropplevelse gjennom analyse av bruksdata.</li>
+  <li>For å oppdage og forhindre svindel, misbruk og andre ulovlige aktiviteter.</li>
+</ul>
+
+<h2>4. Rettslig grunnlag for behandling</h2>
+
+<p>Vi behandler dine personopplysninger basert på følgende rettslige grunnlag i henhold til GDPR:</p>
+
+<ul>
+  <li><strong>Oppfyllelse av avtale:</strong> Behandling som er nødvendig for å levere tjenestene du har bedt om og oppfylle vår avtale med deg.</li>
+  <li><strong>Rettslig forpliktelse:</strong> Behandling som er nødvendig for å overholde gjeldende lover og forskrifter, inkludert krav til KYC og AML.</li>
+  <li><strong>Berettiget interesse:</strong> Behandling som er nødvendig for å ivareta våre legitime forretningsinteresser, som sikkerhet og forebygging av svindel.</li>
+  <li><strong>Samtykke:</strong> Behandling basert på ditt eksplisitte samtykke, for eksempel til markedsføringskommunikasjon.</li>
+</ul>
+
+<h2>5. Deling av opplysninger med tredjeparter</h2>
+
+<p>Vi deler kun dine personopplysninger med tredjeparter der det er nødvendig og i samsvar med gjeldende lovgivning. Dette kan inkludere betalingsleverandører som behandler dine transaksjoner, teknologileverandører som hjelper oss med å drifte nettsiden, regulatoriske myndigheter og tilsynsorganer som krever rapportering, samt leverandører av identitetsverifisering og svindelforebygging. Vi inngår alltid databehandleravtaler med våre samarbeidspartnere for å sikre at dine opplysninger behandles trygt og i samsvar med personvernlovgivningen. Vi selger aldri dine personopplysninger til tredjeparter.</p>
+
+<h2>6. Overføring av opplysninger til utlandet</h2>
+
+<p>I noen tilfeller kan det være nødvendig å overføre dine personopplysninger til land utenfor EØS. Dersom slike overføringer skjer, sørger vi for at det finnes tilstrekkelige sikkerhetstiltak, som EUs standardkontraktsklausuler eller andre godkjente mekanismer, for å beskytte dine opplysninger i samsvar med GDPR.</p>
+
+<h2>7. Lagring av opplysninger</h2>
+
+<p>Vi lagrer dine personopplysninger så lenge det er nødvendig for å oppfylle formålene beskrevet i denne policyen, eller så lenge det kreves av gjeldende lovgivning. Finansielle opplysninger og identifikasjonsdokumenter kan bli lagret i opptil fem år etter at ditt kundeforhold er avsluttet, i samsvar med krav til anti-hvitvasking og regnskapslovgivning. Etter utløpet av lagringsperioden sletter eller anonymiserer vi dine opplysninger på en sikker måte.</p>
+
+<h2>8. Dine rettigheter</h2>
+
+<p>Som bruker av Spinanga Casino har du følgende rettigheter i henhold til GDPR:</p>
+
+<ul>
+  <li><strong>Rett til innsyn:</strong> Du kan be om innsyn i hvilke personopplysninger vi har om deg.</li>
+  <li><strong>Rett til retting:</strong> Du kan be oss om å rette unøyaktige eller ufullstendige opplysninger.</li>
+  <li><strong>Rett til sletting:</strong> Du kan be om at vi sletter dine opplysninger, der dette er mulig i henhold til lovgivningen.</li>
+  <li><strong>Rett til begrensning:</strong> Du kan be om at vi begrenser behandlingen av dine opplysninger i visse situasjoner.</li>
+  <li><strong>Rett til dataportabilitet:</strong> Du kan be om å motta dine opplysninger i et strukturert, maskinlesbart format.</li>
+  <li><strong>Rett til å trekke samtykke:</strong> Dersom behandlingen er basert på samtykke, kan du når som helst trekke dette tilbake.</li>
+</ul>
+
+<p>For å utøve dine rettigheter, vennligst kontakt oss via kontaktinformasjonen på vår offisielle nettside. Vi vil besvare din henvendelse innen 30 dager.</p>
+
+<h2>9. Informasjonskapsler (cookies)</h2>
+
+<p>Spinanga Casino bruker informasjonskapsler og lignende teknologier for å forbedre din brukeropplevelse, analysere trafikk og tilpasse innhold. Du kan administrere dine innstillinger for informasjonskapsler via nettleseren din. Vær oppmerksom på at deaktivering av visse informasjonskapsler kan påvirke funksjonaliteten på nettsiden.</p>
+
+<h2>10. Sikkerhet</h2>
+
+<p>Vi benytter oss av bransjestandarder for sikkerhet, inkludert SSL-kryptering, brannmurer og tilgangskontroller, for å beskytte dine personopplysninger mot uautorisert tilgang, tap eller misbruk. Selv om vi gjør alt vi kan for å sikre dine opplysninger, kan ingen overføring over internett garanteres å være helt sikker.</p>
+
+<h2>11. Endringer i personvernpolicyen</h2>
+
+<p>Vi forbeholder oss retten til å oppdatere denne personvernpolicyen fra tid til annen. Eventuelle endringer vil bli publisert på denne siden med en oppdatert dato. Vi oppfordrer deg til å lese policyen regelmessig for å holde deg informert om hvordan vi beskytter dine opplysninger.</p>
+
+<h2>12. Kontakt oss</h2>
+
+<p>Dersom du har spørsmål, bekymringer eller ønsker å utøve dine rettigheter i forbindelse med behandlingen av dine personopplysninger, er du velkommen til å kontakte oss via de offisielle kontaktkanalene som er tilgjengelige på Spinanga Casinos offisielle nettside i Norge. Du har også rett til å klage til Datatilsynet dersom du mener at vår behandling av dine personopplysninger er i strid med gjeldende lovgivning.</p>
+
+<p><em>Sist oppdatert: 2024</em></p>
+        </article>
+      </div>
+    </section>
+
+    <div class="page-updated" id="page-updated">Siden oppdatert: </div>
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="trust-grid" aria-label="Tillitsorganisasjoner">
+        <a class="trust-link" href="https://www.gamstop.co.uk/" target="_blank" rel="noopener noreferrer">
+          <img src="../trust badges/gamstop.png" alt="Gamstop">
+        </a>
+        <a class="trust-link" href="https://www.gamcare.org.uk/" target="_blank" rel="noopener noreferrer">
+          <img src="../trust badges/GamCare.png" alt="GamCare">
+        </a>
+        <a class="trust-link" href="https://www.begambleaware.org/" target="_blank" rel="noopener noreferrer">
+          <img src="../trust badges/gambleaware.png" alt="BeGambleAware">
+        </a>
+      </div>
+
+      <ul class="footer-links" aria-label="Policy-lenker">
+        <li><a href="../about-us/">om oss</a></li>
+        <li><a href="../contact-us/">kontakt oss</a></li>
+        <li><a href="../bonus-policy/">bonuspolicy</a></li>
+        <li><a href="../privacy-policy/">personvernpolicy</a></li>
+        <li><a href="../responsible-gambling/">ansvarlig spilling</a></li>
+        <li><a href="../terms-and-conditions/">vilkår og betingelser</a></li>
+      </ul>
+
+
+      <div class="social-links" aria-label="Offisielle sosiale medier">
+        <a href="." target="_blank" rel="noopener noreferrer">.</a>
+      </div>
+
+      <p class="providers-title">Spilleleverandører</p>
+      <div class="providers-grid" aria-label="Spillleverandører">
+        <div class="provider-item"><img src="../providers/pragmatic-play-logo-png.png" alt="Pragmatic Play"></div>
+        <div class="provider-item"><img src="../providers/Games-Global.svg" alt="Games Global"></div>
+        <div class="provider-item"><img src="../providers/playngo.webp" alt="Play'n GO"></div>
+        <div class="provider-item"><img src="../providers/netentlogo.png" alt="NetEnt"></div>
+        <div class="provider-item"><img src="../providers/Yggdrasil Gaming_Logo_1.png" alt="Yggdrasil"></div>
+        <div class="provider-item"><img src="../providers/pragmatic-play.png" alt="Pragmatic Play ikon"></div>
+        <div class="provider-item"><img src="../providers/quickspin.png" alt="Quickspin"></div>
+        <div class="provider-item"><img src="../providers/playn-go-logo.png" alt="Play'n GO logo"></div>
+        <div class="provider-item"><img src="../providers/microgaming-logo.png" alt="Microgaming"></div>
+        <div class="provider-item"><img src="../providers/nolimit city.png" alt="Nolimit City"></div>
+        <div class="provider-item"><img src="../providers/evolution.png" alt="Evolution"></div>
+      </div>
+
+      <p class="footer-copy">Opphavsrett 2026 Spinanga Casino. Alle rettigheter forbeholdt.</p>
+    </div>
+  </footer>
+
+
+  <script>
+    const updateEl = document.getElementById('page-updated');
+    const today = new Date().toLocaleDateString('nb-NO', {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric'
+    });
+    updateEl.textContent = `Siden oppdatert: ${today}`;
+  </script>
+
+</body>
+</html>
